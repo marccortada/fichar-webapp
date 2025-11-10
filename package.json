@@ -1,21 +1,20 @@
 {
-  "name": "fichar",
+  "name": "fichargg-root",
   "private": true,
-  "version": "0.1.0",
-  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "cd fichar-webapp && npm run dev",
+    "build": "cd fichar-webapp && npm run build",
+    "start": "cd fichar-webapp && npm start",
+    "lint": "cd fichar-webapp && npm run lint",
+    "test": "cd fichar-webapp && npm run test",
+    "test:e2e": "cd fichar-webapp && npm run test:e2e"
   },
   "dependencies": {
-    "@supabase/supabase-js": "latest",
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest"
+    "@supabase/supabase-js": "^2.81.0",
+    "dotenv": "^16.6.1"
   },
   "devDependencies": {
-    "@types/react": "19.2.2",
-    "typescript": "latest"
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
   }
 }
